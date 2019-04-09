@@ -1,0 +1,6 @@
+framework module ARModelGenerator {
+  umbrella header "ARModelGenerator-umbrella.h"
+
+  export *
+  module * { export * }
+}

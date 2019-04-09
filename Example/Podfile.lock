@@ -1,0 +1,16 @@
+PODS:
+  - ARModelGenerator (0.1.0)
+
+DEPENDENCIES:
+  - ARModelGenerator (from `../`)
+
+EXTERNAL SOURCES:
+  ARModelGenerator:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ARModelGenerator: 705015220e473e5ba7f7f5bda4c4cda9de2658e9
+
+PODFILE CHECKSUM: e9dd5d9ca6be0f4496c9aab0a81ab72f788f062e
+
+COCOAPODS: 1.6.1

@@ -1,0 +1,781 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19390A5206B91660E9D8F47BF85ED7BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		19F7CD3918FC961ABC91C84896328087 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		22D9E6D873E68D6F6DCF9FF8DD2DF0BB /* ARModelGenerator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C0890075517E1F96D8D66226129F9CE /* ARModelGenerator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D2CA353B97A5111EC962D16C0DCD3A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		476FCF324522CF7EE46B109278B5DE35 /* Pods-ARModelGenerator_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F03D40084CEE019F9ABCA1FFD4A57 /* Pods-ARModelGenerator_Example-dummy.m */; };
+		4C1472373102A47076BD0C271EDE5FB4 /* Pods-ARModelGenerator_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A21EA817898691AC732B417530189304 /* Pods-ARModelGenerator_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F54F31BCCE13011AE71B69F10D57B5A /* ARModelGenerator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EFE6F0311D587B5926012FDB2377FB /* ARModelGenerator-dummy.m */; };
+		58A104719127862D157544739794D79F /* Pods-ARModelGenerator_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 353BC9B0D102AB9A1E90C3754616CC2C /* Pods-ARModelGenerator_Tests-dummy.m */; };
+		62F79542225C9E7C00FF91ED /* CustomARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F79540225C9E7C00FF91ED /* CustomARView.swift */; };
+		62F79543225C9E7C00FF91ED /* CustomARView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62F79541225C9E7C00FF91ED /* CustomARView.xib */; };
+		8EE794E6C68F7E66192D710EA272B557 /* Pods-ARModelGenerator_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CB5F1FA345FE21A520B54235BED79E0 /* Pods-ARModelGenerator_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1148152F56C3247FE2072A3717662366 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF2657966522A51D945D13FD1B8D98A8;
+			remoteInfo = "Pods-ARModelGenerator_Example";
+		};
+		AF79CF5D27C8703EB76BFADCCF63857C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7E3A83D1030C95018328561421D657A;
+			remoteInfo = ARModelGenerator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02261B393747C6FA966C98AB8875EEB6 /* Pods-ARModelGenerator_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ARModelGenerator_Example-Info.plist"; sourceTree = "<group>"; };
+		0C0890075517E1F96D8D66226129F9CE /* ARModelGenerator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARModelGenerator-umbrella.h"; sourceTree = "<group>"; };
+		0E72D04AC44A2104316393A1F4FAE818 /* Pods_ARModelGenerator_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARModelGenerator_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		181F03D40084CEE019F9ABCA1FFD4A57 /* Pods-ARModelGenerator_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ARModelGenerator_Example-dummy.m"; sourceTree = "<group>"; };
+		1CACD499B085B5C5BC65DE05B7B42A5A /* Pods-ARModelGenerator_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ARModelGenerator_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		1D751A14077E6D5E9B002286F2F4A5F4 /* Pods-ARModelGenerator_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ARModelGenerator_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		1E84928A46D43369EA0E930AFF527549 /* Pods_ARModelGenerator_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARModelGenerator_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CC3E557F039ECB6D3B825171863274D /* Pods-ARModelGenerator_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ARModelGenerator_Example.release.xcconfig"; sourceTree = "<group>"; };
+		353BC9B0D102AB9A1E90C3754616CC2C /* Pods-ARModelGenerator_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ARModelGenerator_Tests-dummy.m"; sourceTree = "<group>"; };
+		3D37858B6AA6CC50B8C3AAD233D27226 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		50BF13F957EE4F7377B1508A0F3DFEFD /* ARModelGenerator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ARModelGenerator.xcconfig; sourceTree = "<group>"; };
+		5CB5F1FA345FE21A520B54235BED79E0 /* Pods-ARModelGenerator_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ARModelGenerator_Example-umbrella.h"; sourceTree = "<group>"; };
+		602F8520BD8DC5F893DF6479F4532265 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		62F79540225C9E7C00FF91ED /* CustomARView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomARView.swift; path = ARModelGenerator/Classes/CustomARView.swift; sourceTree = "<group>"; };
+		62F79541225C9E7C00FF91ED /* CustomARView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomARView.xib; path = ARModelGenerator/Classes/CustomARView.xib; sourceTree = "<group>"; };
+		641B5BB30ED5D40A4A995D4EB2AB2F7C /* Pods-ARModelGenerator_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ARModelGenerator_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		73E50ACC11A729EB67FF3D7261FD546E /* Pods-ARModelGenerator_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ARModelGenerator_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		75D6208E73CC04A64405DFF3CDB3D590 /* ARModelGenerator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARModelGenerator-prefix.pch"; sourceTree = "<group>"; };
+		76F20D4DF21E1CE0EAF593342A6E0C7D /* Pods-ARModelGenerator_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ARModelGenerator_Tests-Info.plist"; sourceTree = "<group>"; };
+		856CD2A37E5656A24610206E6B104D85 /* ARModelGenerator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ARModelGenerator.modulemap; sourceTree = "<group>"; };
+		87EFE6F0311D587B5926012FDB2377FB /* ARModelGenerator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ARModelGenerator-dummy.m"; sourceTree = "<group>"; };
+		87F8ADFD87E408D17C40AA8178982C5D /* Pods-ARModelGenerator_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ARModelGenerator_Tests.modulemap"; sourceTree = "<group>"; };
+		960CCF6D6EDE6590843ABB47EEA92305 /* Pods-ARModelGenerator_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ARModelGenerator_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A21EA817898691AC732B417530189304 /* Pods-ARModelGenerator_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ARModelGenerator_Tests-umbrella.h"; sourceTree = "<group>"; };
+		A28EC3B363AFC59832733C35B58B0D56 /* Pods-ARModelGenerator_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ARModelGenerator_Example-frameworks.sh"; sourceTree = "<group>"; };
+		B182F29F891C4C9AF28EC15A51140109 /* Pods-ARModelGenerator_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ARModelGenerator_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C3E4F28CE370A9578C2D0B99BD726BF8 /* Pods-ARModelGenerator_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ARModelGenerator_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CBCD6346E0690C75640C3CA5034F90BA /* ARModelGenerator.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ARModelGenerator.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E65A122A0D5101B6C63FDE483E343EC9 /* ARModelGenerator-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ARModelGenerator-Info.plist"; sourceTree = "<group>"; };
+		E70FE2308208285BB14BFFFA497118FC /* ARModelGenerator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ARModelGenerator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDF8CAF1941DC8E3BA46C69B926C460B /* Pods-ARModelGenerator_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ARModelGenerator_Example.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0869D3F694EF42321DB79E1A8F318445 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19F7CD3918FC961ABC91C84896328087 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B61075F3AFD6C499BA5257500D40944 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D2CA353B97A5111EC962D16C0DCD3A2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B23D4E6771428095EE593E521C30EFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19390A5206B91660E9D8F47BF85ED7BC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00EABE1252B85B25080B0D205FF31123 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C80C15CAF86E36FDD0949825B33BD2F /* Pods-ARModelGenerator_Example */,
+				2315C5C4C692FF4471635B726B679C48 /* Pods-ARModelGenerator_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		2315C5C4C692FF4471635B726B679C48 /* Pods-ARModelGenerator_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				87F8ADFD87E408D17C40AA8178982C5D /* Pods-ARModelGenerator_Tests.modulemap */,
+				960CCF6D6EDE6590843ABB47EEA92305 /* Pods-ARModelGenerator_Tests-acknowledgements.markdown */,
+				B182F29F891C4C9AF28EC15A51140109 /* Pods-ARModelGenerator_Tests-acknowledgements.plist */,
+				353BC9B0D102AB9A1E90C3754616CC2C /* Pods-ARModelGenerator_Tests-dummy.m */,
+				76F20D4DF21E1CE0EAF593342A6E0C7D /* Pods-ARModelGenerator_Tests-Info.plist */,
+				A21EA817898691AC732B417530189304 /* Pods-ARModelGenerator_Tests-umbrella.h */,
+				73E50ACC11A729EB67FF3D7261FD546E /* Pods-ARModelGenerator_Tests.debug.xcconfig */,
+				641B5BB30ED5D40A4A995D4EB2AB2F7C /* Pods-ARModelGenerator_Tests.release.xcconfig */,
+			);
+			name = "Pods-ARModelGenerator_Tests";
+			path = "Target Support Files/Pods-ARModelGenerator_Tests";
+			sourceTree = "<group>";
+		};
+		3B65A32EA6D386640CB4A3A7322E4FEC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				856CD2A37E5656A24610206E6B104D85 /* ARModelGenerator.modulemap */,
+				50BF13F957EE4F7377B1508A0F3DFEFD /* ARModelGenerator.xcconfig */,
+				87EFE6F0311D587B5926012FDB2377FB /* ARModelGenerator-dummy.m */,
+				E65A122A0D5101B6C63FDE483E343EC9 /* ARModelGenerator-Info.plist */,
+				75D6208E73CC04A64405DFF3CDB3D590 /* ARModelGenerator-prefix.pch */,
+				0C0890075517E1F96D8D66226129F9CE /* ARModelGenerator-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ARModelGenerator";
+			sourceTree = "<group>";
+		};
+		6C80C15CAF86E36FDD0949825B33BD2F /* Pods-ARModelGenerator_Example */ = {
+			isa = PBXGroup;
+			children = (
+				EDF8CAF1941DC8E3BA46C69B926C460B /* Pods-ARModelGenerator_Example.modulemap */,
+				C3E4F28CE370A9578C2D0B99BD726BF8 /* Pods-ARModelGenerator_Example-acknowledgements.markdown */,
+				1D751A14077E6D5E9B002286F2F4A5F4 /* Pods-ARModelGenerator_Example-acknowledgements.plist */,
+				181F03D40084CEE019F9ABCA1FFD4A57 /* Pods-ARModelGenerator_Example-dummy.m */,
+				A28EC3B363AFC59832733C35B58B0D56 /* Pods-ARModelGenerator_Example-frameworks.sh */,
+				02261B393747C6FA966C98AB8875EEB6 /* Pods-ARModelGenerator_Example-Info.plist */,
+				5CB5F1FA345FE21A520B54235BED79E0 /* Pods-ARModelGenerator_Example-umbrella.h */,
+				1CACD499B085B5C5BC65DE05B7B42A5A /* Pods-ARModelGenerator_Example.debug.xcconfig */,
+				2CC3E557F039ECB6D3B825171863274D /* Pods-ARModelGenerator_Example.release.xcconfig */,
+			);
+			name = "Pods-ARModelGenerator_Example";
+			path = "Target Support Files/Pods-ARModelGenerator_Example";
+			sourceTree = "<group>";
+		};
+		83EEF3C259EB87D4625C51ADFEC8C848 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				CBCD6346E0690C75640C3CA5034F90BA /* ARModelGenerator.podspec */,
+				602F8520BD8DC5F893DF6479F4532265 /* LICENSE */,
+				3D37858B6AA6CC50B8C3AAD233D27226 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				F812FAD95D22D8E2A242ACF69FFE71D0 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				E9D1CF653E2880159EE862854721CDB7 /* Products */,
+				00EABE1252B85B25080B0D205FF31123 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1E84395B19C42A5481AE39F9091E245 /* ARModelGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				62F79540225C9E7C00FF91ED /* CustomARView.swift */,
+				62F79541225C9E7C00FF91ED /* CustomARView.xib */,
+				83EEF3C259EB87D4625C51ADFEC8C848 /* Pod */,
+				3B65A32EA6D386640CB4A3A7322E4FEC /* Support Files */,
+			);
+			name = ARModelGenerator;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		E9D1CF653E2880159EE862854721CDB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E70FE2308208285BB14BFFFA497118FC /* ARModelGenerator.framework */,
+				1E84928A46D43369EA0E930AFF527549 /* Pods_ARModelGenerator_Example.framework */,
+				0E72D04AC44A2104316393A1F4FAE818 /* Pods_ARModelGenerator_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F812FAD95D22D8E2A242ACF69FFE71D0 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1E84395B19C42A5481AE39F9091E245 /* ARModelGenerator */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		52E3E1D9BB07BB56B8AA397DCC423536 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22D9E6D873E68D6F6DCF9FF8DD2DF0BB /* ARModelGenerator-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8655C15803497369AB90F99AEC0F69C8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C1472373102A47076BD0C271EDE5FB4 /* Pods-ARModelGenerator_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A90E1C15D1AEC45729BC5FEB8E3D55EE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EE794E6C68F7E66192D710EA272B557 /* Pods-ARModelGenerator_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A7E3A83D1030C95018328561421D657A /* ARModelGenerator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A79FB40591DBBFF607BCE973C0ADBC6C /* Build configuration list for PBXNativeTarget "ARModelGenerator" */;
+			buildPhases = (
+				52E3E1D9BB07BB56B8AA397DCC423536 /* Headers */,
+				DDE1C899D6FFA626AB1BB21A38929206 /* Sources */,
+				7B23D4E6771428095EE593E521C30EFF /* Frameworks */,
+				F5C10156BE174C9567D408C5EB4DE45D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARModelGenerator;
+			productName = ARModelGenerator;
+			productReference = E70FE2308208285BB14BFFFA497118FC /* ARModelGenerator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CA718F21C8CAE722D5C73678BB42EE30 /* Pods-ARModelGenerator_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53F7E186B1C2BD1201FD17DDE65E2B1F /* Build configuration list for PBXNativeTarget "Pods-ARModelGenerator_Tests" */;
+			buildPhases = (
+				8655C15803497369AB90F99AEC0F69C8 /* Headers */,
+				AF6E681B56DB6B3FCC4D5406308A6118 /* Sources */,
+				0869D3F694EF42321DB79E1A8F318445 /* Frameworks */,
+				D36CCA96A81AA951FAA2631F06CCFB9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65442D01AE79ABC0D454362C9D09A11E /* PBXTargetDependency */,
+			);
+			name = "Pods-ARModelGenerator_Tests";
+			productName = "Pods-ARModelGenerator_Tests";
+			productReference = 0E72D04AC44A2104316393A1F4FAE818 /* Pods_ARModelGenerator_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EF2657966522A51D945D13FD1B8D98A8 /* Pods-ARModelGenerator_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28E2EEF44349F0C286DE65DF90DAED7D /* Build configuration list for PBXNativeTarget "Pods-ARModelGenerator_Example" */;
+			buildPhases = (
+				A90E1C15D1AEC45729BC5FEB8E3D55EE /* Headers */,
+				FA5030852217FEF1271D3AA8CBAFE2A4 /* Sources */,
+				3B61075F3AFD6C499BA5257500D40944 /* Frameworks */,
+				5750CF4A3C30FEC3EB87F2DB1B851902 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E228213BE1B4A552F00FCEFA0023AD26 /* PBXTargetDependency */,
+			);
+			name = "Pods-ARModelGenerator_Example";
+			productName = "Pods-ARModelGenerator_Example";
+			productReference = 1E84928A46D43369EA0E930AFF527549 /* Pods_ARModelGenerator_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					A7E3A83D1030C95018328561421D657A = {
+						LastSwiftMigration = 1020;
+					};
+				};
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = E9D1CF653E2880159EE862854721CDB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7E3A83D1030C95018328561421D657A /* ARModelGenerator */,
+				EF2657966522A51D945D13FD1B8D98A8 /* Pods-ARModelGenerator_Example */,
+				CA718F21C8CAE722D5C73678BB42EE30 /* Pods-ARModelGenerator_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5750CF4A3C30FEC3EB87F2DB1B851902 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D36CCA96A81AA951FAA2631F06CCFB9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5C10156BE174C9567D408C5EB4DE45D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62F79543225C9E7C00FF91ED /* CustomARView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF6E681B56DB6B3FCC4D5406308A6118 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58A104719127862D157544739794D79F /* Pods-ARModelGenerator_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDE1C899D6FFA626AB1BB21A38929206 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62F79542225C9E7C00FF91ED /* CustomARView.swift in Sources */,
+				4F54F31BCCE13011AE71B69F10D57B5A /* ARModelGenerator-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA5030852217FEF1271D3AA8CBAFE2A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				476FCF324522CF7EE46B109278B5DE35 /* Pods-ARModelGenerator_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		65442D01AE79ABC0D454362C9D09A11E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ARModelGenerator_Example";
+			target = EF2657966522A51D945D13FD1B8D98A8 /* Pods-ARModelGenerator_Example */;
+			targetProxy = 1148152F56C3247FE2072A3717662366 /* PBXContainerItemProxy */;
+		};
+		E228213BE1B4A552F00FCEFA0023AD26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ARModelGenerator;
+			target = A7E3A83D1030C95018328561421D657A /* ARModelGenerator */;
+			targetProxy = AF79CF5D27C8703EB76BFADCCF63857C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0737E36B967E8760EB36899DF5304B16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CACD499B085B5C5BC65DE05B7B42A5A /* Pods-ARModelGenerator_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ARModelGenerator_Example/Pods-ARModelGenerator_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ARModelGenerator_Example/Pods-ARModelGenerator_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3919DAADDDE88BB5BA17A9C6A52103C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 641B5BB30ED5D40A4A995D4EB2AB2F7C /* Pods-ARModelGenerator_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ARModelGenerator_Tests/Pods-ARModelGenerator_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ARModelGenerator_Tests/Pods-ARModelGenerator_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4596596C01ACEF4CD16A4AA943097801 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50BF13F957EE4F7377B1508A0F3DFEFD /* ARModelGenerator.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ARModelGenerator/ARModelGenerator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ARModelGenerator/ARModelGenerator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ARModelGenerator/ARModelGenerator.modulemap";
+				PRODUCT_MODULE_NAME = ARModelGenerator;
+				PRODUCT_NAME = ARModelGenerator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AA2EF95FD90E08E661BC04606760F450 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73E50ACC11A729EB67FF3D7261FD546E /* Pods-ARModelGenerator_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ARModelGenerator_Tests/Pods-ARModelGenerator_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ARModelGenerator_Tests/Pods-ARModelGenerator_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AB4D69770D8ACE3A05E80BB3502666F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		EF624D1D6D0A14DEADA8C212919CA020 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50BF13F957EE4F7377B1508A0F3DFEFD /* ARModelGenerator.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ARModelGenerator/ARModelGenerator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ARModelGenerator/ARModelGenerator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ARModelGenerator/ARModelGenerator.modulemap";
+				PRODUCT_MODULE_NAME = ARModelGenerator;
+				PRODUCT_NAME = ARModelGenerator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F232B5ECA11A71BFA199A229B323F454 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		FE2A709A48372E412FDF15C209527CF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CC3E557F039ECB6D3B825171863274D /* Pods-ARModelGenerator_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ARModelGenerator_Example/Pods-ARModelGenerator_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ARModelGenerator_Example/Pods-ARModelGenerator_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28E2EEF44349F0C286DE65DF90DAED7D /* Build configuration list for PBXNativeTarget "Pods-ARModelGenerator_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0737E36B967E8760EB36899DF5304B16 /* Debug */,
+				FE2A709A48372E412FDF15C209527CF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB4D69770D8ACE3A05E80BB3502666F6 /* Debug */,
+				F232B5ECA11A71BFA199A229B323F454 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53F7E186B1C2BD1201FD17DDE65E2B1F /* Build configuration list for PBXNativeTarget "Pods-ARModelGenerator_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA2EF95FD90E08E661BC04606760F450 /* Debug */,
+				3919DAADDDE88BB5BA17A9C6A52103C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A79FB40591DBBFF607BCE973C0ADBC6C /* Build configuration list for PBXNativeTarget "ARModelGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF624D1D6D0A14DEADA8C212919CA020 /* Debug */,
+				4596596C01ACEF4CD16A4AA943097801 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

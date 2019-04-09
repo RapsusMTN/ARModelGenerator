@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ARModelGenerator_Example' do
+  pod 'ARModelGenerator', :path => '../'
+
+  target 'ARModelGenerator_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
