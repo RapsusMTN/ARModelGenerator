@@ -22,18 +22,16 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f5D-TH-edY" customClass="CustomARView" customModule="ARModelGenerator">
-                                <rect key="frame" x="16" y="28" width="343" height="577"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="577" id="fzD-7E-UWU"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="f5D-TH-edY" secondAttribute="trailing" constant="16" id="ear-4V-ekf"/>
-                            <constraint firstItem="f5D-TH-edY" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="g48-oh-hHs"/>
-                            <constraint firstItem="f5D-TH-edY" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="rDp-sz-xdU"/>
+                            <constraint firstItem="f5D-TH-edY" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="3Wl-GL-HXL"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="f5D-TH-edY" secondAttribute="bottom" id="7xm-hP-gaP"/>
+                            <constraint firstAttribute="trailing" secondItem="f5D-TH-edY" secondAttribute="trailing" id="Gvs-Vi-9xb"/>
+                            <constraint firstItem="f5D-TH-edY" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="lIT-yl-Mh2"/>
                         </constraints>
                     </view>
                     <connections>

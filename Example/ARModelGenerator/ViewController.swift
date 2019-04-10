@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let scene = SCNScene(named: "Assets3d.scnassets/finalMaleta.scn")
+        let scene = SCNScene(named: "Assets3d.scnassets/bestSuitcase.scn")
         let url = Bundle.main.url(forResource: "glasgow", withExtension: "jpg")
         self.customView.configurateSceneView(inScene: scene!, withNameNode: "maleta", markerURL: url!, debugLabel: false)
     
