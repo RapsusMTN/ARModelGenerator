@@ -24,8 +24,6 @@ public class CustomARView: UIView {
     
     @IBOutlet var labelInfo: UILabel!
     
-    @IBOutlet var segmentedControl: UISegmentedControl!
-    
     @IBOutlet var sceneView: ARSCNView!
     
     
@@ -43,8 +41,10 @@ public class CustomARView: UIView {
     
     private var bundleAssets:Bundle?// If you bundle assets isnt created by default override this param(Optional)
     
-    private var imagen:UIImage!
+    private var debugLabel:Bool!
     
+    
+    //MARK: - Inits
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -61,6 +61,7 @@ public class CustomARView: UIView {
         
     }
     
+    //MARK: -Functions
     
     public func setconfiguration() {
         let scene = SCNScene()
@@ -101,8 +102,6 @@ public class CustomARView: UIView {
             let cgImage = convertCIImageToCGImage(inputImage: imageToCIImage) else {
                 throw CustomARViewError.imageConversion
         }
-      
-        self.imagen = image
         
         let arImage = ARReferenceImage(cgImage, orientation: CGImagePropertyOrientation.up, physicalWidth: 0.2)
         arImage.name = "glasgowMarker"
@@ -126,13 +125,20 @@ public class CustomARView: UIView {
     
     
     //This func used to add the parameters to initialize the SceneView configurated (called before the view appears)
-    public func configurateSceneView(inScene scene:SCNScene,withNameNode node:String,markerURL name:URL) {
+    public func configurateSceneView(inScene scene:SCNScene,withNameNode node:String,markerURL name:URL,debugLabel label:Bool) {
         self.sceneModel = scene
         self.nodeName = node
         self.markerURL = name
+        self.debugLabel = label
         self.model3d = get3dModel()
         //seteo
+        if self.debugLabel {
+            self.labelInfo.isHidden = false
+        } else {
+            self.labelInfo.isHidden = true
+        }
         setconfiguration()
+       
         
     }
     
@@ -145,25 +151,17 @@ public class CustomARView: UIView {
     }
     
     
-    @IBAction func segmentedChanged(_ sender: Any) {
+    //Drop the euler angles of the node
+    public func dropModel() {
         
-        switch segmentedControl.selectedSegmentIndex {
-        case 0 :
-            self.model3d.eulerAngles.x = -1.57 //180º
-        case 1 :
-            self.model3d.eulerAngles.x = 0
-            self.model3d.eulerAngles.z = 0
-        default:
-            "No item selected"
-            
-        }
-        
-        
+        self.model3d.eulerAngles.x = -1.57
         
     }
     
-    public func getImage() -> UIImage {
-        return self.imagen
+    //Changes the euler angles of the node
+    public func normalModel() {
+        self.model3d.eulerAngles.x = 0
+        self.model3d.eulerAngles.z = 0
     }
     
     
@@ -208,27 +206,33 @@ public class CustomARView: UIView {
     
 }
 
+//MARK: - ARSCNViewDelegate
+
 extension CustomARView: ARSCNViewDelegate {
     
     public func session(_ session: ARSession, cameraDidChangeTrackingState camera: ARCamera) {
         
-        switch camera.trackingState {
-        case .limited(let reason):
-            self.labelInfo.isHidden = false
-            switch reason {
-            case .excessiveMotion:
-                self.labelInfo.text = "Mueve el dispositivo mas despacio."
-            case .initializing, .relocalizing:
-                self.labelInfo.text = "ARKit no esta reconociendo la imagen correctamente, vuelve a colocar el dispositivo en la imagen"
-            case .insufficientFeatures:
-                self.labelInfo.text = "No se ha encontrado puntos suficientes ni luz.."
+        if self.debugLabel {
+            
+            switch camera.trackingState {
+                
+            case .limited(let reason):
+                switch reason {
+                case .excessiveMotion:
+                    self.labelInfo.text = "Mueve el dispositivo mas despacio."
+                case .initializing, .relocalizing:
+                    self.labelInfo.text = "ARKit no esta reconociendo la imagen correctamente, vuelve a colocar el dispositivo en la imagen"
+                case .insufficientFeatures:
+                    self.labelInfo.text = "No se ha encontrado puntos suficientes ni luz.."
+                }
+            case .normal:
+                self.labelInfo.text = "Apunta con la camara hacia la imagen indicada."
+            case .notAvailable:
+                self.labelInfo.text = "El seguimiento de la camara no esta disponible"
             }
-        case .normal:
-            self.labelInfo.text = "Apunta con la camara hacia la imagen indicada."
-        case .notAvailable:
-            self.labelInfo.isHidden = false
-            self.labelInfo.text = "El seguimiento de la camara no esta disponible"
+            
         }
+    
         
     }
     

@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         let scene = SCNScene(named: "Assets3d.scnassets/finalMaleta.scn")
         let url = Bundle.main.url(forResource: "glasgow", withExtension: "jpg")
-        self.customView.configurateSceneView(inScene: scene!, withNameNode: "maleta", markerURL: url!)
+        self.customView.configurateSceneView(inScene: scene!, withNameNode: "maleta", markerURL: url!, debugLabel: false)
     
         // Do any additional setup after loading the view, typically from a nib.
     }

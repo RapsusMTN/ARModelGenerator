@@ -15,7 +15,6 @@
                 <outlet property="contentView" destination="iN0-l3-epB" id="Dpo-vw-L5U"/>
                 <outlet property="labelInfo" destination="5xn-M5-gOD" id="OXJ-j4-WkM"/>
                 <outlet property="sceneView" destination="rYv-rN-1Eu" id="4W0-WL-hQ0"/>
-                <outlet property="segmentedControl" destination="gXy-1j-h0W" id="aEG-3C-7q0"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -40,16 +39,6 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="gXy-1j-h0W">
-                    <rect key="frame" x="95" y="619" width="185" height="29"/>
-                    <segments>
-                        <segment title="Normal"/>
-                        <segment title="Tumbada"/>
-                    </segments>
-                    <connections>
-                        <action selector="segmentedChanged:" destination="-1" eventType="valueChanged" id="wJg-LQ-5mg"/>
-                    </connections>
-                </segmentedControl>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -57,11 +46,8 @@
                 <constraint firstItem="rYv-rN-1Eu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="4Ht-rQ-IG3"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="rYv-rN-1Eu" secondAttribute="trailing" id="5jn-NZ-srI"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="5xn-M5-gOD" secondAttribute="trailing" constant="16" id="GsW-yl-jAB"/>
-                <constraint firstItem="gXy-1j-h0W" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="95" id="ImC-hS-W1E"/>
                 <constraint firstItem="rYv-rN-1Eu" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="myO-Oy-enR"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="rYv-rN-1Eu" secondAttribute="bottom" id="p4i-fa-z8d"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="gXy-1j-h0W" secondAttribute="trailing" constant="95" id="sP3-ti-Mb4"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="gXy-1j-h0W" secondAttribute="bottom" constant="20" id="trE-2Y-5YU"/>
                 <constraint firstItem="5xn-M5-gOD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="zyJ-BW-wEY"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
