@@ -49,13 +49,15 @@ public class CustomARView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
-      
+        setDelegates()
+        setLabelStyle()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
         setDelegates()
+        setLabelStyle()
         
     }
     
@@ -73,6 +75,11 @@ public class CustomARView: UIView {
     public func setDelegates() {
         self.sceneView.delegate = self
 
+    }
+    
+    
+    public func setLabelStyle() {
+        self.labelInfo.layer.cornerRadius = 10
     }
     
     
@@ -141,12 +148,14 @@ public class CustomARView: UIView {
     @IBAction func segmentedChanged(_ sender: Any) {
         
         switch segmentedControl.selectedSegmentIndex {
-        case 0:
-            self.labelInfo.text = "First"
-        case 1:
-            self.labelInfo.text = "Second"
+        case 0 :
+            self.model3d.eulerAngles.x = -1.57 //180º
+        case 1 :
+            self.model3d.eulerAngles.x = 0
+            self.model3d.eulerAngles.z = 0
         default:
-            "No selection"
+            "No item selected"
+            
         }
         
         

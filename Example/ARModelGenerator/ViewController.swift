@@ -8,11 +8,20 @@
 
 import UIKit
 import ARModelGenerator
+import ARKit
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet weak var customView: CustomARView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        let scene = SCNScene(named: "Assets3d.scnassets/finalMaleta.scn")
+        let url = Bundle.main.url(forResource: "glasgow", withExtension: "jpg")
+        self.customView.configurateSceneView(inScene: scene!, withNameNode: "maleta", markerURL: url!)
+    
         // Do any additional setup after loading the view, typically from a nib.
     }
 

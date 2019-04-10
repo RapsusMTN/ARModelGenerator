@@ -22,20 +22,23 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f5D-TH-edY" customClass="CustomARView" customModule="ARModelGenerator">
-                                <rect key="frame" x="16" y="28" width="343" height="369"/>
+                                <rect key="frame" x="16" y="28" width="343" height="577"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="369" id="zRY-wh-fgt"/>
+                                    <constraint firstAttribute="height" constant="577" id="fzD-7E-UWU"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="f5D-TH-edY" secondAttribute="trailing" constant="16" id="Agi-gv-XH3"/>
-                            <constraint firstItem="f5D-TH-edY" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="ZEL-9z-duz"/>
-                            <constraint firstItem="f5D-TH-edY" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="fad-Jt-8Fn"/>
+                            <constraint firstAttribute="trailing" secondItem="f5D-TH-edY" secondAttribute="trailing" constant="16" id="ear-4V-ekf"/>
+                            <constraint firstItem="f5D-TH-edY" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="g48-oh-hHs"/>
+                            <constraint firstItem="f5D-TH-edY" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="rDp-sz-xdU"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="customView" destination="f5D-TH-edY" id="wNP-cR-ImS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

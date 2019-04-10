@@ -14,6 +14,8 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		623536F6225DE167007D238B /* glasgow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 623536F5225DE167007D238B /* glasgow.jpg */; };
+		62FA1766225DE0FA00E4F2D2 /* Assets3d.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 62FA1765225DE0FA00E4F2D2 /* Assets3d.scnassets */; };
 		D8A18958178BB3AD72C161D6 /* Pods_ARModelGenerator_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D6A7245B9C311216971A777 /* Pods_ARModelGenerator_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +45,8 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		61ECAAAA113B4A1D863F1C4A /* Pods-ARModelGenerator_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARModelGenerator_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ARModelGenerator_Tests/Pods-ARModelGenerator_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		623536F5225DE167007D238B /* glasgow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = glasgow.jpg; sourceTree = "<group>"; };
+		62FA1765225DE0FA00E4F2D2 /* Assets3d.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Assets3d.scnassets; sourceTree = "<group>"; };
 		7C5B8159AC40AE3A021E701D /* Pods-ARModelGenerator_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARModelGenerator_Example.debug.xcconfig"; path = "Target Support Files/Pods-ARModelGenerator_Example/Pods-ARModelGenerator_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		975C3067A711B808A486B07E /* ARModelGenerator.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ARModelGenerator.podspec; path = ../ARModelGenerator.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B5970523AE99F6415E656B6D /* Pods-ARModelGenerator_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARModelGenerator_Tests.release.xcconfig"; path = "Target Support Files/Pods-ARModelGenerator_Tests/Pods-ARModelGenerator_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -96,9 +100,11 @@
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				623536F5225DE167007D238B /* glasgow.jpg */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				62FA1765225DE0FA00E4F2D2 /* Assets3d.scnassets */,
 			);
 			name = "Example for ARModelGenerator";
 			path = ARModelGenerator;
@@ -248,7 +254,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				623536F6225DE167007D238B /* glasgow.jpg in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				62FA1766225DE0FA00E4F2D2 /* Assets3d.scnassets in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);

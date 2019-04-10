@@ -43,8 +43,8 @@
                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="gXy-1j-h0W">
                     <rect key="frame" x="95" y="619" width="185" height="29"/>
                     <segments>
-                        <segment title="First"/>
-                        <segment title="Second"/>
+                        <segment title="Normal"/>
+                        <segment title="Tumbada"/>
                     </segments>
                     <connections>
                         <action selector="segmentedChanged:" destination="-1" eventType="valueChanged" id="wJg-LQ-5mg"/>
