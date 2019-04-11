@@ -178,7 +178,7 @@ public class CustomARView: UIView {
         
     }
     
-    
+    //Setup the custom view in the ViewController
     func setup()
     {
         contentView = loadViewFromNib()
@@ -242,15 +242,11 @@ extension CustomARView: ARSCNViewDelegate {
         
         if anchor is ARImageAnchor {
             
-            self.textNode = createMeasureText()
-            
             self.model3d.opacity = 0.6
             self.model3d.position = SCNVector3(anchor.transform.columns.3.x,anchor.transform.columns.3.y,anchor.transform.columns.3.z)
-            self.textNode.position = SCNVector3(anchor.transform.columns.3.x - 0.2,anchor.transform.columns.3.y,anchor.transform.columns.3.z)
-            self.textNode.scale = SCNVector3(0.006, 0.006, 0.006)
             
             self.sceneView.scene.rootNode.addChildNode(self.model3d)
-            self.sceneView.scene.rootNode.addChildNode(self.textNode)
+        
             
         }
     }

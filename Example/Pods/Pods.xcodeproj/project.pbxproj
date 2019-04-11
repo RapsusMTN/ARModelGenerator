@@ -497,7 +497,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ARModelGenerator/ARModelGenerator-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ARModelGenerator/ARModelGenerator-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ARModelGenerator/ARModelGenerator.modulemap";
 				PRODUCT_MODULE_NAME = ARModelGenerator;
@@ -627,7 +627,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ARModelGenerator/ARModelGenerator-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ARModelGenerator/ARModelGenerator-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ARModelGenerator/ARModelGenerator.modulemap";
 				PRODUCT_MODULE_NAME = ARModelGenerator;
