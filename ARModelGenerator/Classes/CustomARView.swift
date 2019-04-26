@@ -13,6 +13,7 @@ enum CustomARViewError : Error {
     case imageConversion
 }
 
+@available(iOS 11.3, *)
 @IBDesignable
 public class CustomARView: UIView {
 
@@ -24,7 +25,7 @@ public class CustomARView: UIView {
     
     @IBOutlet var labelInfo: UILabel!
     
-    @IBOutlet var sceneView: ARSCNView!
+    var sceneView: ARSCNView = ARSCNView()
     
     
     //MARK: - Properties
@@ -49,6 +50,7 @@ public class CustomARView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
+        initARSceneView()
         setDelegates()
         setLabelStyle()
     }
@@ -56,6 +58,7 @@ public class CustomARView: UIView {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
+        initARSceneView()
         setDelegates()
         setLabelStyle()
         
@@ -70,6 +73,23 @@ public class CustomARView: UIView {
         let imagereferences = try? getResourcesWithURL()
         configuration.detectionImages = imagereferences
         self.sceneView.session.run(configuration, options: [])
+    }
+    
+    private func initARSceneView() {
+        self.sceneView.delegate = self
+        self.addSubview(self.sceneView)
+        self.sceneView.translatesAutoresizingMaskIntoConstraints = false
+        
+        self.sceneView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+        self.sceneView.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
+        self.sceneView.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
+        self.sceneView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+        
+        
+        
+        
+        
+        
     }
     
     
@@ -208,8 +228,10 @@ public class CustomARView: UIView {
 
 //MARK: - ARSCNViewDelegate
 
+@available(iOS 11.3, *)
 extension CustomARView: ARSCNViewDelegate {
     
+    @available(iOS 11.3, *)
     public func session(_ session: ARSession, cameraDidChangeTrackingState camera: ARCamera) {
         
         if self.debugLabel {
