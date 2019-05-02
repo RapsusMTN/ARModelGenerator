@@ -16,7 +16,7 @@ enum CustomARViewError : Error {
 @available(iOS 11.3, *)
 @IBDesignable
 @objc public class CustomARView: UIView {
-    
+
     
     
     //MARK: - Outlets
@@ -61,7 +61,6 @@ enum CustomARViewError : Error {
         initARSceneView()
         setDelegates()
         setLabelStyle()
-        
     }
     
     //MARK: -Functions
@@ -84,18 +83,11 @@ enum CustomARViewError : Error {
         self.sceneView.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
         self.sceneView.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
         self.sceneView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
-        
-        
-        
-        
-        
-        
     }
     
     
     public func setDelegates() {
         self.sceneView.delegate = self
-        
     }
     
     
@@ -125,7 +117,7 @@ enum CustomARViewError : Error {
         
         let arImage = ARReferenceImage(cgImage, orientation: CGImagePropertyOrientation.up, physicalWidth: 0.2)
         arImage.name = "glasgowMarker"
-        
+       
         return [arImage]
         
     }
@@ -155,8 +147,6 @@ enum CustomARViewError : Error {
             self.labelInfo.isHidden = true
         }
         setconfiguration()
-        
-        
     }
     
     //Returns the node of the scene and the name entered by parameter
@@ -164,19 +154,16 @@ enum CustomARViewError : Error {
         
         guard let node = self.sceneModel.rootNode.childNode(withName: self.nodeName, recursively: true) else { fatalError("3D Model not found!!") }
         return node
-        
     }
     
     
     //Drop the euler angles of the node
-    @objc public func dropModel() {
-        
+    @objc public func layDownModel() {
         self.model3d.eulerAngles.x = -1.57
-        
     }
     
     //Changes the euler angles of the node
-    @objc public func normalModel() {
+    @objc public func upsideModel() {
         self.model3d.eulerAngles.x = 0
         self.model3d.eulerAngles.z = 0
     }
@@ -216,9 +203,6 @@ enum CustomARViewError : Error {
         
         return view
     }
-    
-    
-    
 }
 
 //MARK: - ARSCNViewDelegate
@@ -247,10 +231,7 @@ extension CustomARView: ARSCNViewDelegate {
             case .notAvailable:
                 self.labelInfo.text = "El seguimiento de la camara no esta disponible"
             }
-            
         }
-        
-        
     }
     
     
@@ -263,16 +244,6 @@ extension CustomARView: ARSCNViewDelegate {
             self.model3d.position = SCNVector3(anchor.transform.columns.3.x,anchor.transform.columns.3.y,anchor.transform.columns.3.z)
             
             self.sceneView.scene.rootNode.addChildNode(self.model3d)
-            
-            
         }
     }
-    
-    
-    
-    
-    
-    
-    
-    
 }
