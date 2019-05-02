@@ -16,7 +16,7 @@ enum CustomARViewError : Error {
 @available(iOS 11.3, *)
 @IBDesignable
 @objc public class CustomARView: UIView {
-
+    
     
     
     //MARK: - Outlets
@@ -95,7 +95,7 @@ enum CustomARViewError : Error {
     
     public func setDelegates() {
         self.sceneView.delegate = self
-
+        
     }
     
     
@@ -125,16 +125,13 @@ enum CustomARViewError : Error {
         
         let arImage = ARReferenceImage(cgImage, orientation: CGImagePropertyOrientation.up, physicalWidth: 0.2)
         arImage.name = "glasgowMarker"
-       
+        
         return [arImage]
         
     }
     
     
-    /// Converts A CIImage To A CGImage
-    ///
-    /// - Parameter inputImage: CIImage
-    /// - Returns: CGImage
+    // Converts A CIImage To A CGImage
     func convertCIImageToCGImage(inputImage: CIImage) -> CGImage? {
         let context = CIContext(options: nil)
         if let cgImage = context.createCGImage(inputImage, from: inputImage.extent) {
@@ -158,7 +155,7 @@ enum CustomARViewError : Error {
             self.labelInfo.isHidden = true
         }
         setconfiguration()
-       
+        
         
     }
     
@@ -179,7 +176,7 @@ enum CustomARViewError : Error {
     }
     
     //Changes the euler angles of the node
- @objc public func normalModel() {
+    @objc public func normalModel() {
         self.model3d.eulerAngles.x = 0
         self.model3d.eulerAngles.z = 0
     }
@@ -194,8 +191,6 @@ enum CustomARViewError : Error {
         let textNode = SCNNode(geometry: text)
         
         return textNode
-        
-        
     }
     
     //Setup the custom view in the ViewController
@@ -254,7 +249,7 @@ extension CustomARView: ARSCNViewDelegate {
             }
             
         }
-    
+        
         
     }
     
@@ -268,11 +263,11 @@ extension CustomARView: ARSCNViewDelegate {
             self.model3d.position = SCNVector3(anchor.transform.columns.3.x,anchor.transform.columns.3.y,anchor.transform.columns.3.z)
             
             self.sceneView.scene.rootNode.addChildNode(self.model3d)
-        
+            
             
         }
     }
-   
+    
     
     
     
