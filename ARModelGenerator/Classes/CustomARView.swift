@@ -15,7 +15,7 @@ enum CustomARViewError : Error {
 
 @available(iOS 11.3, *)
 @IBDesignable
-public class CustomARView: UIView {
+@objc public class CustomARView: UIView {
 
     
     
@@ -34,7 +34,7 @@ public class CustomARView: UIView {
     
     private var markerURL:URL!//The name  of the ARGroup what you have the markers
     
-    private var model3d:SCNNode!
+    public var model3d:SCNNode!
     
     private var textNode:SCNNode!
     
@@ -145,7 +145,7 @@ public class CustomARView: UIView {
     
     
     //This func used to add the parameters to initialize the SceneView configurated (called before the view appears)
-    public func configurateSceneView(inScene scene:SCNScene,withNameNode node:String,markerURL name:URL,debugLabel label:Bool) {
+    @objc public func configurateSceneView(inScene scene:SCNScene,withNameNode node:String,markerURL name:URL,debugLabel label:Bool) {
         self.sceneModel = scene
         self.nodeName = node
         self.markerURL = name
@@ -172,14 +172,14 @@ public class CustomARView: UIView {
     
     
     //Drop the euler angles of the node
-    public func dropModel() {
+    @objc public func dropModel() {
         
         self.model3d.eulerAngles.x = -1.57
         
     }
     
     //Changes the euler angles of the node
-    public func normalModel() {
+ @objc public func normalModel() {
         self.model3d.eulerAngles.x = 0
         self.model3d.eulerAngles.z = 0
     }
