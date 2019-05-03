@@ -16,7 +16,6 @@ enum CustomARViewError : Error {
 @available(iOS 11.3, *)
 @IBDesignable
 @objc public class CustomARView: UIView {
-
     
     
     //MARK: - Outlets
@@ -29,6 +28,7 @@ enum CustomARViewError : Error {
     
     
     //MARK: - Properties
+    var delegate:ManagerARModelDelegate?
     
     private var nodeName:String!// The names node into the SCNScene
     
@@ -237,13 +237,14 @@ extension CustomARView: ARSCNViewDelegate {
     
     //This function calls the renderer func of the ARSCNViewDelegate
     public func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
-        
         if anchor is ARImageAnchor {
+            delegate?.startedARModel()
             
             self.model3d.opacity = 0.6
             self.model3d.position = SCNVector3(anchor.transform.columns.3.x,anchor.transform.columns.3.y,anchor.transform.columns.3.z)
             
             self.sceneView.scene.rootNode.addChildNode(self.model3d)
         }
+        delegate?.finishedARModel()
     }
 }

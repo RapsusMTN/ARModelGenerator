@@ -15,6 +15,7 @@
 		4C1472373102A47076BD0C271EDE5FB4 /* Pods-ARModelGenerator_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A21EA817898691AC732B417530189304 /* Pods-ARModelGenerator_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4F54F31BCCE13011AE71B69F10D57B5A /* ARModelGenerator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EFE6F0311D587B5926012FDB2377FB /* ARModelGenerator-dummy.m */; };
 		58A104719127862D157544739794D79F /* Pods-ARModelGenerator_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 353BC9B0D102AB9A1E90C3754616CC2C /* Pods-ARModelGenerator_Tests-dummy.m */; };
+		620B22C1227C2A360024F581 /* ManagerARModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620B22C0227C2A360024F581 /* ManagerARModel.swift */; };
 		62F79542225C9E7C00FF91ED /* CustomARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F79540225C9E7C00FF91ED /* CustomARView.swift */; };
 		62F79543225C9E7C00FF91ED /* CustomARView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62F79541225C9E7C00FF91ED /* CustomARView.xib */; };
 		8EE794E6C68F7E66192D710EA272B557 /* Pods-ARModelGenerator_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CB5F1FA345FE21A520B54235BED79E0 /* Pods-ARModelGenerator_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -51,6 +52,7 @@
 		50BF13F957EE4F7377B1508A0F3DFEFD /* ARModelGenerator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ARModelGenerator.xcconfig; sourceTree = "<group>"; };
 		5CB5F1FA345FE21A520B54235BED79E0 /* Pods-ARModelGenerator_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ARModelGenerator_Example-umbrella.h"; sourceTree = "<group>"; };
 		602F8520BD8DC5F893DF6479F4532265 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		620B22C0227C2A360024F581 /* ManagerARModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ManagerARModel.swift; path = ARModelGenerator/Classes/ManagerARModel.swift; sourceTree = "<group>"; };
 		62F79540225C9E7C00FF91ED /* CustomARView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomARView.swift; path = ARModelGenerator/Classes/CustomARView.swift; sourceTree = "<group>"; };
 		62F79541225C9E7C00FF91ED /* CustomARView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomARView.xib; path = ARModelGenerator/Classes/CustomARView.xib; sourceTree = "<group>"; };
 		641B5BB30ED5D40A4A995D4EB2AB2F7C /* Pods-ARModelGenerator_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ARModelGenerator_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 		E1E84395B19C42A5481AE39F9091E245 /* ARModelGenerator */ = {
 			isa = PBXGroup;
 			children = (
+				620B22C0227C2A360024F581 /* ManagerARModel.swift */,
 				62F79540225C9E7C00FF91ED /* CustomARView.swift */,
 				62F79541225C9E7C00FF91ED /* CustomARView.xib */,
 				83EEF3C259EB87D4625C51ADFEC8C848 /* Pod */,
@@ -383,6 +386,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				62F79542225C9E7C00FF91ED /* CustomARView.swift in Sources */,
+				620B22C1227C2A360024F581 /* ManagerARModel.swift in Sources */,
 				4F54F31BCCE13011AE71B69F10D57B5A /* ARModelGenerator-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
