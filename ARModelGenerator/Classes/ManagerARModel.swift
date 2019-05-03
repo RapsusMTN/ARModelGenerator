@@ -7,7 +7,7 @@
 
 import Foundation
 
-@objc protocol ManagerARModelDelegate {
+@objc public protocol ManagerARModelDelegate {
     
     func startedARModel()
     
