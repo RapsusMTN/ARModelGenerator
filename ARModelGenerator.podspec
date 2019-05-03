@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'ARModelGenerator'
-    s.version          = '1.0.0'
+    s.version          = '1.0.1'
     s.summary          = 'Augmented Reality model generator'
     s.description      = 'This pod is used to generate 3d models on top of a given marker'
     s.homepage         = 'https://github.com/RapsusMTN'
