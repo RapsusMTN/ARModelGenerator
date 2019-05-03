@@ -28,7 +28,7 @@ enum CustomARViewError : Error {
     
     
     //MARK: - Properties
-    var delegate:ManagerARModelDelegate?
+    @objc var delegate1:ManagerARModelDelegate?
     
     private var nodeName:String!// The names node into the SCNScene
     
@@ -238,13 +238,13 @@ extension CustomARView: ARSCNViewDelegate {
     //This function calls the renderer func of the ARSCNViewDelegate
     public func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
         if anchor is ARImageAnchor {
-            delegate?.startedARModel()
+            delegate1?.startedARModel()
             
             self.model3d.opacity = 0.6
             self.model3d.position = SCNVector3(anchor.transform.columns.3.x,anchor.transform.columns.3.y,anchor.transform.columns.3.z)
             
             self.sceneView.scene.rootNode.addChildNode(self.model3d)
         }
-        delegate?.finishedARModel()
+        delegate1?.finishedARModel()
     }
 }
