@@ -28,7 +28,7 @@ enum CustomARViewError : Error {
     
     
     //MARK: - Properties
-    @objc var delegate1:ManagerARModelDelegate?
+    @objc public var delegate1:ManagerARModelDelegate?
     
     private var nodeName:String!// The names node into the SCNScene
     
